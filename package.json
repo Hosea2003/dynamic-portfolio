@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix":"next lint --fix",
-    "prepare": "husky"
+    "lint:fix":"next lint --fix"
   },
   "dependencies": {
     "next": "15.2.1",
@@ -26,13 +25,5 @@
     "lint-staged": "^15.4.3",
     "tailwindcss": "^4",
     "typescript": "^5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": "yarn lint:fix"
   }
 }
